@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="super_camera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06A-tO-pEe">
+                                <frame key="frameInset" minX="164" minY="338" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="la:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRE-yP-kre"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmh-lk-mEQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="Vzc-Mc-d2w"/>
+                                    <constraint firstAttribute="width" constant="500" id="ybZ-rg-PJA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="06A-tO-pEe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7ax-bC-cWn"/>
+                            <constraint firstItem="bmh-lk-mEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E9L-Bw-MH6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bmh-lk-mEQ" secondAttribute="bottom" id="PUc-9f-qhb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bmh-lk-mEQ" secondAttribute="trailing" id="Unj-dp-7Od"/>
+                            <constraint firstItem="06A-tO-pEe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hae-LD-Fsw"/>
+                            <constraint firstItem="bmh-lk-mEQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wtg-Ov-64x"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tPg-XB-YFV" appends="YES" id="Y3u-pz-gtx"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="scroll" destination="bmh-lk-mEQ" id="xB8-IW-VTi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="tPg-XB-YFV">
+                    <connections>
+                        <action selector="lp:" destination="BYZ-38-t0r" id="ycR-Dy-UCg"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-68" y="77.811094452773617"/>
         </scene>
     </scenes>
 </document>

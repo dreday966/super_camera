@@ -12,6 +12,7 @@
 		809D28071DACDD5F00D00427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809D28051DACDD5F00D00427 /* Main.storyboard */; };
 		809D28091DACDD5F00D00427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809D28081DACDD5F00D00427 /* Assets.xcassets */; };
 		809D280C1DACDD5F00D00427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809D280A1DACDD5F00D00427 /* LaunchScreen.storyboard */; };
+		809D28141DACDE3A00D00427 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D28131DACDE3A00D00427 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		809D28081DACDD5F00D00427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809D280B1DACDD5F00D00427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809D280D1DACDD5F00D00427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809D28131DACDE3A00D00427 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				809D28011DACDD5F00D00427 /* AppDelegate.swift */,
 				809D28031DACDD5F00D00427 /* ViewController.swift */,
+				809D28131DACDE3A00D00427 /* File.swift */,
 				809D28051DACDD5F00D00427 /* Main.storyboard */,
 				809D28081DACDD5F00D00427 /* Assets.xcassets */,
 				809D280A1DACDD5F00D00427 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				809D28041DACDD5F00D00427 /* ViewController.swift in Sources */,
+				809D28141DACDE3A00D00427 /* File.swift in Sources */,
 				809D28021DACDD5F00D00427 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3VD3D55CJ;
 				INFOPLIST_FILE = super_camera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coolcto.super-camera";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3VD3D55CJ;
 				INFOPLIST_FILE = super_camera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coolcto.super-camera";
 				PRODUCT_NAME = "$(TARGET_NAME)";
